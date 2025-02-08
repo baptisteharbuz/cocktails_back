@@ -34,7 +34,6 @@ export const loginController = (req, res) => {
                     res.status(500).send('Erreur lors de la génération du token');
                 }
             } else {
-                console.log("Identifiants invalides !");
                 res.status(401).send('Invalid credentials');
             }
         })
